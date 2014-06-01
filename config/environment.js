@@ -10,3 +10,5 @@
 window.ENV = window.ENV || {};
 
 window.ENV.MODEL_FACTORY_INJECTIONS = true;
+
+window.ENV.NAMESPACE = 'api';

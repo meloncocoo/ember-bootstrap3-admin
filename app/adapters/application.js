@@ -1,1 +1,5 @@
-export default DS.FixtureAdapter.extend();
+var ApplicationAdapter = DS.RESTAdapter.extend({
+    namespace: window.ENV.NAMESPACE
+});
+
+export default ApplicationAdapter;

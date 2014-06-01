@@ -72,7 +72,7 @@ Default Example
 		  model: function() {
 		    return this.store.find('post', 1);
 		  }
-		});
+		});¡
 
 		export default IndexRoute;
 		```
