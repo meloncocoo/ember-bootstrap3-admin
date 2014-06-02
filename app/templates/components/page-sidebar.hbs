@@ -1,0 +1,28 @@
+<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+<div class="page-sidebar navbar-collapse collapse">
+    <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+    <div class="sidebar-toggler"></div>
+    <div class="clearfix"></div>
+    <!-- END SIDEBAR TOGGLER BUTTON -->
+
+    <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+    <!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
+    <!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
+    <div>
+        <form class="sidebar-search" action="extra_search.html" method="POST">
+            <a href="javascript:;" class="remove">
+            </a>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <!-- DOC: value=" ", that is, value with space must be passed to the submit button -->
+                                <input class="btn submit" type="button" value=" ">
+                                </span>
+            </div>
+        </form>
+    </div>
+    <!-- END RESPONSIVE QUICK SEARCH FORM -->
+
+    {{yield}}
+</div>
