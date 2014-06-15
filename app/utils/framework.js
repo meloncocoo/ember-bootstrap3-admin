@@ -9,4 +9,4 @@ Framework.Utils = Ember.Object.create({
     }
 });
 
-export default Framework;
+export default Framework.Utils;

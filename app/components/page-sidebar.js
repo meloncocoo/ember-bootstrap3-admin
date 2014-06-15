@@ -46,7 +46,7 @@ export default Ember.View.extend({
 
         // handle the search query submit on enter press
         $('.page-sidebar .sidebar-search').on('keypress', 'input.form-control', function (e) {
-            if (e.which == 13) {
+            if (e.which === 13) {
                 $('.sidebar-search').submit();
                 return false; //<---- Add this line
             }
@@ -56,7 +56,7 @@ export default Ember.View.extend({
         $('.sidebar-search .submit').on('click', function (e) {
             e.preventDefault();
             if ($('body').hasClass("page-sidebar-closed")) {
-                if ($('.sidebar-search').hasClass('open') == false) {
+                if ($('.sidebar-search').hasClass('open') === false) {
                     if ($('.page-sidebar-fixed').size() === 1) {
                         $('.page-sidebar .sidebar-toggler').click(); //trigger sidebar toggle button
                     }
