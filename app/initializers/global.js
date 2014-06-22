@@ -4,6 +4,7 @@
 import Framework from 'appkit/utils/framework';
 
 export default {
+    name: 'global',
     initialize: function() {
 
     }
